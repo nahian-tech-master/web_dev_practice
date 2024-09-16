@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>passward genarator</h1>
+        <input type="password" onkeyup="passInput()" id="passbox" placeholder="passward">
+        <img src="hide.webp" height="25px" width="25px" id="hidepic" onclick="hide()">
+        <img src="copy.png" height="30px" width="30px" onclick="copypassword()" >
+        <button type="button" onclick="ok()">Submit</button><br>
+        <p id="message"></p>
+        <ul id="list">
+            <li id="cheracter">contain 8 cheracter</li>
+            <li id="lowercase">contain lowercase </li>
+            <li id="uppercase">contain uppercase</li>
+            <li id="number">contain number</li>
+            <li id="specialCheracter">contain special cheracter</li>
+        </ul>
+        <button type="button" onclick="genPass()">generate pass</button>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

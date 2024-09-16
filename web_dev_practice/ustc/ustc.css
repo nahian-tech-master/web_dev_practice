@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+
+}
+.header{
+    height: 109px;
+    width: 100%;
+    position: relative;
+}
+.contuct{
+    height: 39px;
+    width: 100%;
+    background-color:#14A850 ;
+    display: flex;
+}
+.contuct .mobile{
+    width: 205px;
+    display: flex;
+    padding-left: 20px;
+    padding-top: 7px;
+    font-size: 12px;
+    font-weight: 400;
+    gap: 5px;
+    color: #FFFFFF;
+}
+#m{
+    padding-top: 2px;
+}
+
+.email {
+    width: 100%;
+    display: flex;
+    padding-left: 14px;
+    padding-top: 7px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+    gap: 5px;
+}
+
+.info{
+    height: 70px;
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.5);
+    display: flex;
+    z-index: 111;
+}
+.left{
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 38px;
+}
+.left img{
+    width: 190px;
+    height: 52px;
+}
+.right{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 400;
+    gap: 10px;
+}
+.drop{
+    display: flex;
+    gap: 10px;
+}
+.nav{
+    width: 100%;
+    height: 105px;
+    background-image: linear-gradient(to bottom right,#21AD56,#21AD56,#21AD56,#3FBD62,#3FBD62,#58CA6D,#58CA6D); 
+    color:#F2FFFF;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 5px;
+}
+.about{
+    position: relative;
+    cursor: pointer;
+
+}
+.about  ul{
+    display:none;
+    list-style: none;
+    position: absolute;
+    gap: 100px;
+}
+.about:hover ul{
+    display: block;
+    transform: translateY(2%);
+    animation: ani;
+    animation-duration: 0.5s;
+}
+@keyframes ani {
+    from{transform: translateY(25%);
+        
+    }to{
+        transform: translateY(2%);
+        
+    }
+    
+}
+.about ul li{
+    width: 200px;
+    height: 40px;
+    align-content: center;
+    padding-left: 10px;
+    border-bottom: 1px dashed green;
+    background-color: #F2FFFF;
+    gap: 100px;
+}
+.about ul li:last-child{
+    border-bottom: none;
+}

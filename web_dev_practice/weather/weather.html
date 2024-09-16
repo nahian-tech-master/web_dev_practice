@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="box">
+        <div id="search">
+            <div id="place">
+                <div id="alter">
+                    <input type="text" id="cityInput">
+                    <button class="btn" id="submitBtn" type="submit"  onclick="submit()">Submit</button><br><br>
+                    <label id="location">Get weather by location</label>
+                    <button class="btn" id="locationBtn" type="submit" onclick="getlocation()">🌍 Location</button>
+                </div>
+            </div>
+        </div>
+        <div id="finder">
+            <div id="up">
+                <div id="datePlace">
+                    <div id="date">
+                        <div id="time">
+                            <p>5:40</p>
+                        </div>
+                        <div id="today">
+                            <p>sunday <span>24may</span></p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="info">
+                    <div id="temp">
+                        <p id="Temp">40&#176</p>
+                        <img src="" alt="img">
+                    </div>
+                    <div>
+                        <div id="humidity">humidity</div>
+                        <div id="feel">feel</div>
+                        <div id="sky">sky</div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div id="down">
+                <div id="extra">
+                    <div id="one">6.40 pm</div>
+                    <div id="wet1">rain</div>
+                </div>
+                <div id="extra">
+                    <div id="two">7.40 pm</div>
+                    <div id="wet2">rain</div>
+                </div>
+                <div id="extra">
+                    <div id="three">8.40 pm</div>
+                    <div id="wet3">rain</div>
+                </div>
+            </div>
+            <div id="week">
+                <!-- <div class="same" id="sun">
+                    <div id="one">sunday</div>
+                    <div id="sky">rain</div>
+                    <img src="" alt="sun">
+                </div>
+                <div class="same"  id="mon">
+                    <div id="one">monday</div>
+                    <div id="sky">sun</div>
+                    <img src="" alt="mon">
+                </div>
+                <div class="same"  id="tue">
+                    <div id="one">tuesday</div>
+                    <div id="sky">rain</div>
+                    <img src="" alt="mon">
+                </div>
+                <div class="same"  id="wed">
+                    <div id="one">wednesday</div>
+                    <div id="sky">rain</div>
+                    <img src="" alt="wed">
+                </div>
+                <div class="same"  id="thu">
+                    <div id="one">thrusday</div>
+                    <div id="sky">sun</div>
+                    <img src="" alt="thu">
+                </div>
+                <div class="same"  id="fri">
+                    <div id="one">friday</div>
+                    <div id="sky">sun</div>
+                    <img src="" alt="fri">
+                </div>
+                <div  class="same" id="sat">
+                    <div id="one">saturday</div>
+                    <div id="sky">rain</div>
+                    <img src="" alt="sat">
+                </div> -->
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="weather.js"></script>
+</body>
+</html>

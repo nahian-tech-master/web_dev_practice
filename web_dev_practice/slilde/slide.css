@@ -1,0 +1,105 @@
+/*body{
+    background-color: hsl(0, 3%, 39%);
+}
+.container {
+    position: relative;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.contain {
+    text-align: center;
+    align-content: center;
+    position: relative;
+    width: 700px;
+    height: 400px;
+    overflow: hidden; /* Hide overflowing images 
+}
+img{
+    display: none;
+    width:700px; 
+    height:400px;
+    transform: translateX();
+    transition:2s;
+}
+
+.btn{
+    width: 50px;
+    height: 50px;
+    opacity: 50%;
+    font-size: 30px;
+}
+.left.btn{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    margin: 20px;
+}
+.right.btn{
+    position: absolute;
+    top: 30%;
+    right: 0;
+    margin: 20px;
+}*/
+body {
+    background-color: hsl(0, 3%, 39%);
+}
+
+.container {
+    position: relative;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.contain {
+    text-align: center;
+    align-content: center;
+    position: relative;
+    width: 700px;
+    height: 400px;
+    overflow: hidden; /* Hide overflowing images */
+}
+
+img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 700px;
+    height: 400px;
+    animation: animi;
+    animation-duration: 10s;
+}
+@keyframes animi {
+    to{
+        transform: scale(1.1);
+    }
+    from{
+        transform: scale();
+    }
+    
+}
+.btn {
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    outline: none;
+}
+
+.left.btn {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.right.btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+
+}
